@@ -4,8 +4,6 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Resource;
-
 /**
  * SqlDao
  *
@@ -20,8 +18,9 @@ public class SqlDao {
      */
     private static final Logger LOGGER = LoggerFactory.getLogger(SqlDao.class);
 
-    @Resource
-    private SqlSessionTemplate SqlSession;
+    private SqlSessionTemplate sqlSession;
 
-
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
+        this.sqlSession = sqlSession;
+    }
 }

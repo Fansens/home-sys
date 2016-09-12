@@ -51,6 +51,10 @@
         <constructor-arg index="0" ref="sessionFactory"/>
     </bean>
 
+    <bean id="sqlDao" class="net.wildcrab.common.sql.SqlDao">
+        <property name="sqlSession" ref="sqlSession" />
+    </bean>
+
     <!-- 事务配置 -->
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
