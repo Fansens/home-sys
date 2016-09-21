@@ -8,17 +8,17 @@
         xmlns:p="http://www.springframework.org/schema/p"
         xmlns:util="http://www.springframework.org/schema/util"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
             http://www.springframework.org/schema/context
-            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/context/spring-context-4.3.xsd
             http://www.springframework.org/schema/aop
-            http://www.springframework.org/schema/beans/spring-aop.xsd
+            http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
             http://www.springframework.org/schema/tx
-            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
             http://www.springframework.org/schema/mvc
-            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+            http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
             http://www.springframework.org/schema/util
-            http://www.springframework.org/schema/util/spring-util.xsd">
+            http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
     <!-- 加载配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -41,15 +41,15 @@
     </bean>
 
     <!-- 配置会话 -->
-    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+   <!-- <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="sqlMappers.xml"/>
-    </bean>
+    </bean>-->
 
     <!-- 注册模板 -->
-    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sessionFactory"/>
-    </bean>
+    </bean>-->
 
     <!--<bean id="sqlDao" class="net.wildcrab.common.sql.SqlDao">-->
         <!--<property name="sqlSession" ref="sqlSession" />-->
