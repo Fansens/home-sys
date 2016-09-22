@@ -4,7 +4,9 @@
 
 define([
     //加载所有的controller
-    'controllers/homeController'
+    'controllers/homeController',
+    'controllers/loginController'
 ] ,function () {
     //空，只用于加载所有的controllers
+    
 });

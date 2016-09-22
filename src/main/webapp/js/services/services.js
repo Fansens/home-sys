@@ -7,5 +7,5 @@
 define([
     'angular'
 ] ,function (angular) {
-    return angular.module("services" ,['$resource']);
+    return angular.module("services" ,['ngResource']);
 });

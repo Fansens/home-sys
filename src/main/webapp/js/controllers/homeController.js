@@ -4,7 +4,7 @@
 define([
     'controllers/controllers'
 ] ,function (controllers) {
-    controllers.factory('homeController', ['$resource' ,function ($resource) {
-        
+    controllers.factory('homeController', ['$scope' ,function ($resource) {
+        $scope.msg = "World !";
     }]);
 });

@@ -28,11 +28,13 @@ require.config({
             deps : ["angular"]
         }
     },
-    urlArgs : "bust" + (new date()).getTime()
+    urlArgs : "bust" + (new Date()).getTime()
 });
 
 //加载路由信息
-define("init", ["route"], function () {
-    //使用bootstrap方法启动Angular应用 
-    angular.bootstrap(document, ["app"]);
+define(['route'], function () {
+    //使用bootstrap方法启动Angular应用
+    console.log("start loading webapp.js ...");
+    angular.bootstrap(document, ['app']);
+    console.log("loading webapp.js success ...");
 });

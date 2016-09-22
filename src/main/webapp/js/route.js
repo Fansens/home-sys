@@ -6,10 +6,10 @@
 define([
     'app'
 ] ,function (app) {
-    app.config(['$routeProvider'] ,function ($routeProvider) {
-        $routeProvider
+    app.config(['$RouteProvider'] ,function ($RouteProvider) {
+        $RouteProvider
             .when('/' ,{
-                templateUrl : 'views/index.html',
+                templateUrl : 'index.html',
                 controller : 'loginController'
             })
             .otherwise({
