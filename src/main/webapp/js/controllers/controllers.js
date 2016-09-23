@@ -6,6 +6,7 @@
 //本模块供所有其他controller模块引用
 define([
     'angular'
-] ,function (angular) {
-    return angular.module("controllers" ,[]);
+] ,function () {
+    console.log("Start loading controllers/controllers ...");
+    return angular.module("app.controllers" ,[]);
 });

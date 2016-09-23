@@ -8,5 +8,6 @@ define([
     'controllers/loginController'
 ] ,function () {
     //空，只用于加载所有的controllers
-    
+    console.log("Start loading controllers/index.js ...");
+
 });

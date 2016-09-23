@@ -4,7 +4,9 @@
 define([
     'controllers/controllers'
 ] ,function (controllers) {
-    controllers.factory('homeController', ['$scope' ,function ($resource) {
+    console.log("Start loading controllers/homeController.js ...");
+    controllers.controller('homeController', ['$scope' ,function ($scope) {
+        console.log("Loading controllers/homeController.js ...");
         $scope.msg = "World !";
     }]);
 });

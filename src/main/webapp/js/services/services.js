@@ -6,6 +6,7 @@
 //本模块供所有其他service模块引用
 define([
     'angular'
-] ,function (angular) {
-    return angular.module("services" ,['ngResource']);
+] ,function () {
+    console.log("Start loading services/services.js ...");
+    return angular.module("app.services" ,['ngResource']);
 });

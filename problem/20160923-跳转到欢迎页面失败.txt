@@ -1,0 +1,16 @@
+Q:在web.xml文件中设置welcome-file-list列表，但是在浏览器访问时，提示404
+
+A:
+	1.静态资源未放行：在web.xml中添加类似
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+	的内容。
+	并且在spring配置文件中添加静态资源路径，类似：
+	<mvc:resources mapping="/js/**" location="/js/"/>
+	
+	2.如果问题还是未解决：
+		查看welcome-file-list列表的欢迎界面是否在上面指定的静态资源路径中，如果没有，则修改到该路径中。
+		
+	3.<mvc:default-servlet-handler />
