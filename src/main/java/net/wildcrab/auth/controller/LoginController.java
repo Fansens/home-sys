@@ -22,8 +22,11 @@ public class LoginController {
     /** 日志 */
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
 
+    @RequestMapping("/")
+    public String login(){ return "index";}
+
     @RequestMapping("/hello")
     public String hello(){
-        return "views/index.html";
+        return "hello";
     }
 }

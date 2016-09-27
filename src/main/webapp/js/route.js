@@ -7,19 +7,19 @@ define([
     'app'
 ] ,function (app) {
     console.log("Start loading route.js ...");
-    app.config(['$routeProvider'] ,function ($routeProvider) {
+    app.config(['$routeProvider' ,function ($routeProvider) {
         $routeProvider
             .when('/' ,{
-                templateUrl : 'index.html',
+                templateUrl : 'views/hello.html',
                 controller : 'loginController'
             })
             .when('/hello' ,{
-                templateUrl : 'hello.html',
+                templateUrl : 'views/hello.html',
                 controller : 'homeController'
             })
             .otherwise({
                 redirectTo : '/'
             });
-    });
+    }]);
     console.log("Loading route.js success ...");
 });

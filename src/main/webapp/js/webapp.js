@@ -43,7 +43,6 @@ require.config({
 define([
     'require',
     'angular' ,
-    'app',
     'route'
 ], function (require,ng) {
     //使用bootstrap方法启动Angular应用

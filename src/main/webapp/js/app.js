@@ -11,7 +11,7 @@ define([
     'angularResource',
     'services/index',
     'controllers/index'
-] ,function (angular) {
+] ,function () {
     console.log("start loading app.js ...");
     return angular.module('app', ['ngAnimate', 'ngRoute', 'ngResource', 'app.services', 'app.controllers']);
 });
