@@ -14,3 +14,5 @@ A:
 		查看welcome-file-list列表的欢迎界面是否在上面指定的静态资源路径中，如果没有，则修改到该路径中。
 		
 	3.<mvc:default-servlet-handler />
+
+	4.添加"/"controller路径

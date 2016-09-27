@@ -1,0 +1,16 @@
+
+/**
+* index left
+*/
+#left-body{
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+/** index right */
+#mid-body{
+    float: right;
+    width: 70%;
+    height: auto;
+}

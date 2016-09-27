@@ -43,8 +43,9 @@ require.config({
 define([
     'require',
     'angular' ,
+    'jquery',
     'route'
-], function (require,ng) {
+], function (require,ng,$) {
     //使用bootstrap方法启动Angular应用
     console.log("start loading webapp.js ...");
     require(['domReady!'] ,function (document) {

@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <base href="/jaguar/" />
     <title>HelloWorld</title>
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     <script src="js/require.js" data-main="js/webapp"></script>
 </head>
 <body>
-    <b>{{msg}}</b>
-    <div ng-view></div>
+    <!-- navigate -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div id="head-container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">Jaguar</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main body -->
+    <div id="container">
+        <div id="left">
+
+        </div>
+        <div id="mid">
+            <div id="main" class="container">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- foot -->
 </body>
 </html>
