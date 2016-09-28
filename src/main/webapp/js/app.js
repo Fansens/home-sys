@@ -10,8 +10,9 @@ define([
     'angularRoute',
     'angularResource',
     'services/index',
-    'controllers/index'
+    'controllers/index',
+    'directives/index'
 ] ,function () {
     console.log("start loading app.js ...");
-    return angular.module('app', ['ngAnimate', 'ngRoute', 'ngResource', 'app.services', 'app.controllers']);
+    return angular.module('app', ['ngAnimate', 'ngRoute', 'ngResource', 'app.services', 'app.controllers' ,'app.directives']);
 });
